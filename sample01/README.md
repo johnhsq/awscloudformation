@@ -10,11 +10,11 @@ Note: By default, the cfn-hup daemon runs every 15 minutes, so it may take up to
 
 ### CloudFormation Helper Scripts
 Learn more about cfn-* scripts:
-https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html
-https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/updating.stacks.walkthrough.html#updating.create.initial.stack
+* https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html
+* https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/updating.stacks.walkthrough.html#updating.create.initial.stack
 
 Learn more about Bootstrapping Application with CloudFormation
-https://s3.amazonaws.com/cloudformation-examples/BoostrappingApplicationsWithAWSCloudFormation.pdf
+* https://s3.amazonaws.com/cloudformation-examples/BoostrappingApplicationsWithAWSCloudFormation.pdf
 
 ### Metadata
 ```json
