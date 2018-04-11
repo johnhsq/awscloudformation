@@ -7,5 +7,7 @@ Sample List:
 
 ### trouble shooting CloudFormation
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html#troubleshooting-errors
+```
 /var/logs/cloud-init.log
 /var/logs/cfn-init.log
+```
