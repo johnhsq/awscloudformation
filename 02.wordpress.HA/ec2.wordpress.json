@@ -72,7 +72,7 @@
     },
 
     "DBClass" : {
-      "Default" : "db.m1.small",
+      "Default" : "db.m1.medium",
       "Description" : "Database instance class",
       "Type" : "String",
       "AllowedValues" : [ "db.t1.micro", "db.m1.small", "db.m1.medium", "db.m1.large", "db.m1.xlarge",

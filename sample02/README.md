@@ -2,21 +2,13 @@
 
 ### Command to create/update/delete the stack
 ```
-$ aws cloudformation create-stack --stack-name <stackname> --template-body file://ec2.wordpress.json --parameters file://param.json 
+$ aws cloudformation create-stack --stack-name <stackname> --template-body file://ec2.wordpress.json --parameters ParameterKey=KeyName,ParameterValue=gtixcaas 
 
-$ aws cloudformation create-change-set --stack-name <stackname> --change-set-name <changesetname> --template-body file://ec2.wordpress.json --parameters file://param.json 
+$ aws cloudformation create-change-set --stack-name <stackname> --template-body file://ec2.wordpress.json --parameters ParameterKey=KeyName,ParameterValue=gtixcaas 
 
-$ aws cloudformation list-change-sets --stack-name <stackname> 
-
-$ aws cloudformation describe-change-set --stack-name <stackname> --change-set-name <changesetname> | jq '.Changes[]'
-
-$ aws cloudformation execute-change-set --stack-name <stackname> --change-set-name <changesetname>
-
-$ aws cloudformation update-stack --stack-name <stackname> --template-body file://ec2.wordpress.json --parameters file://param.json  
+$ aws cloudformation update-stack --stack-name <stackname> --template-body file://ec2.wordpress.json --parameters ParameterKey=KeyName,ParameterValue=gtixcaas 
 ```
-Note: 
-1. By default, the cfn-hup daemon runs every 15 minutes, so it may take up to 15 minutes for the application to change once the stack has been updated.
-2. The advantage to use change set is that it gives you an oppertunity to do dry run and provides a clear audit trail
+Note: By default, the cfn-hup daemon runs every 15 minutes, so it may take up to 15 minutes for the application to change once the stack has been updated.
 
 
 ### cfn-signal & WaitCondition
