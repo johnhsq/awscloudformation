@@ -1,0 +1,9 @@
+[
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "gtixcaas"
+  },{
+    "ParameterKey": "SSLCertificateArn",
+    "ParameterValue": "arn:aws:acm:us-west-1:613149319869:certificate/7057549f-40ee-44ad-b02f-65f6c64eeffa"
+  }
+]
